@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.upr{
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(39, 68, 93);
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    
+}
+
+.c1{
+    font-size: 3rem;
+    text-shadow: 6px 6px 6px rgb(13, 13, 13);
+    color: #ADB2D4;
+    padding: 20px;
+    padding-left: 90px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 1rem;
+}
+
+li{
+    text-align: center;
+    justify-items: center;
+    border-radius: 10px;
+    height: 35px;
+    width: 150px;
+    background-color: rgb(73, 125, 116);    
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    transition-duration: 0.6s;
+}
+
+body{
+    background-color: #71BBB2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 300px;
+    margin-top: 200px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(148, 202, 214);
+    height: 35px;
+    width: 150px;
+}
+
+/* li{
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+} */
+
+a li:hover{
+    color: rgb(118, 163, 173);
+    background-color: rgb(86, 146, 136);
+    box-shadow: 06px 6px 4px #71BBB2;
+    scale: 1.1;
+    color: rgb(172, 241, 255);
+    
+}
+
+.maincontent{
+    border-radius: 15px;
+    
+    width: 650px;
+    height: 800px;
+    background-color: #EFE9D5;
+    box-shadow: 5px 5px 15px #7e7a6e;
+}
+
+/* age conttent */
+.agecontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-top: 50px;
+}
+.agecontent label{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(100, 100, 100);
+    padding-left: 100px;
+         
+}
+
+.agecontent .inputdate{
+    padding-top: 80px;
+}
+
+.agecontent .todate{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.agecontent input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+    left: 100px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: auto;   
+}
+
+.agecontent input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff; /* Example focus color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Example focus shadow */
+}
+
+.agecontent input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #007bff;
+}
+
+.inputdate input[type="date"] {
+    margin-left: 39px;
+}
+
+.todate input[type="date"] {
+    margin-left: 120px;
+    
+}
+
+.btn button{
+    margin: 20px 275px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADB2D4;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.ageresult {
+    width: inherit;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 25px;
+    flex-direction: row;
+}
+
+.ageresult .sre{
+    width: 180px;
+    height: 165px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+/* age khtm ho gaya */

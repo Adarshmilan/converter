@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="upr">
+      <div class="c1">Chik Converter</div>
+      <div class="c2">
+        <nav>
+          <ul>
+            <a href="Area.html"><li>Area</li></a>
+            <a href="BMI.html"><li>BMI</li></a>
+            <a href="Age.html"><li>Age</li></a>
+            <a href="Data.html"><li>Data</li></a>
+            <a href="Date.html"><li>Date</li></a>
+            <a href="Discount.html"><li>Discount</li></a>
+            <a href="Mass.html"><li>Mass</li></a>
+            <a href="Temprature.html"><li>Temprature</li></a>
+            <a href="Time.html"><li>Time</li></a>
+            <a href="Length.html"><li>Length</li></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="maincontent agecontent " id="maincontent" >
+      <div class="inputdate">
+        <label for="fromdateInput">Date of birth : </label>
+        <input type="date" id="fromdateInput" name="fromdateInput">
+      </div>
+      <div class="todate">
+        <label for="todateInput">Today : </label>
+        <input type="date" id="todateInput" name="todate"> 
+      </div>
+      <div class="btn">
+        <button onclick="calculateAge()">Calculate</button>
+      </div>
+      <div class="ageresult">
+        <div class="sre" id="years">Years:</div>
+        <div class="sre" id="months">Months:</div>
+        <div class="sre" id="days">Days:</div>
+        <div class="sre" id="hours">Hours:</div>
+        <div class="sre" id="minutes">Minutes:</div>
+        <div class="sre" id="seconds">Second:</div>
+      </div>
+    </div>
+    
+    <script src="scrpt.js"></script>
+  </body>
+</html>
