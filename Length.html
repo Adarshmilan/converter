@@ -15,8 +15,7 @@
             <a href="Area.html"><li>Area</li></a>
             <a href="BMI.html"><li>BMI</li></a>
             <a href="Age.html"><li>Age</li></a>
-            <a href="Data.html"><li>Data</li></a>
-            <a href="Date.html"><li>Date</li></a>
+            <a href="Data.html"><li>Data</li></a>        
             <a href="Discount.html"><li>Discount</li></a>
             <a href="Mass.html"><li>Mass</li></a>
             <a href="Temprature.html"><li>Temprature</li></a>
@@ -27,8 +26,40 @@
       </div>
     </div>
 
-    <div class="maincontent" id="maincontent" >
-
+    <div class="Lengthmaincontent" id="Lengthmaincontent" >
+      <div class="leninput">
+        <label for="lengthin">
+          <input type="number" id="lengthin" name="lengthin" placeholder="Enter Length" />
+        </label>
+        <label for="leninunit">
+          <select name="leninunit" id="leninunit">
+            <option value="">Select input unit</option>
+            <option value="mm">Millimeter (mm)</option>
+            <option value="cm">Centimeter (cm)</option>
+            <option value="m">Meter (m)</option>
+            <option value="km">Kilometer (km)</option>
+            <option value="in">Inch (in)</option>
+            <option value="ft">Feet (ft)</option>
+          </select>
+        </label>
+      </div>
+      <div class="lenoutput">
+        <label for="lengthout">
+          <input type="number" id="lengthout" name="lengthout" placeholder="wait for result" />
+        </label>
+        <label for="lenoutunit">
+          <select name="lenoutunit" id="lenoutunit">
+            <option value="">Select output unit</option>
+            <option value="mm">Millimeter (mm)</option>
+            <option value="cm">Centimeter (cm)</option>
+            <option value="m">Meter (m)</option>
+            <option value="km">Kilometer (km)</option>
+            <option value="in">Inch (in)</option>
+            <option value="ft">Feet (ft)</option>
+          </select>
+      </div>
+      <div class="lenbtn">
+        <button onclick="calculateLength()">Calculate</button>
     </div>
 
     <script src="scrpt.js"></script>

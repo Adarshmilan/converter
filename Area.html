@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Area convert</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,7 +16,7 @@
             <a href="BMI.html"><li>BMI</li></a>
             <a href="Age.html"><li>Age</li></a>
             <a href="Data.html"><li>Data</li></a>
-            <a href="Date.html"><li>Date</li></a>
+         
             <a href="Discount.html"><li>Discount</li></a>
             <a href="Mass.html"><li>Mass</li></a>
             <a href="Temprature.html"><li>Temprature</li></a>
@@ -25,9 +25,38 @@
           </ul>
         </nav>
       </div>
-    </div>  
-    <div class="maincontent" id="maincontent" >
-
+    </div>
+    <div class="areamaincontent" id="areamaincontent">
+      <div class="areainput">
+        <label for="areainput"></label>
+        <input type="number" id="areainput" name="areainput" placeholder="Enter the area " />
+        <label for="inunit">
+          <select name="inunit" id="inunit">
+            <option value="">Select an unit</option>
+            <option value="sqkm">Square Kilometer</option>
+            <option value="sqm">Square Meter</option>
+            <option value="sqcm">Square Centimeter</option>
+            <option value="sqmm">Square Millimeter</option>
+            <option value="sqmi">Square Mile</option>
+          </select>
+        </label>
+      </div>
+      <div class="areaoutput">
+        <label for="areaoutput"></label>
+        <input type="number" id="areaoutput" name="areaoutput" placeholder="wait for  result" />
+        <label for="outunit">
+          <select name="outunit" id="outunit">
+            <option value="">Select an unit</option>
+            <option value="sqkm">Square Kilometer</option>
+            <option value="sqm">Square Meter</option>
+            <option value="sqcm">Square Centimeter</option>
+            <option value="sqmm">Square Millimeter</option>
+            <option value="sqmi">Square Mile</option>
+          </select>
+        </label>
+      </div>
+      <div class="areabtn">
+        <button onclick="calculateArea()">Calculate</button>
     </div>
 
     <script src="scrpt.js"></script>

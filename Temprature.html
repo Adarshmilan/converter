@@ -16,7 +16,7 @@
             <a href="BMI.html"><li>BMI</li></a>
             <a href="Age.html"><li>Age</li></a>
             <a href="Data.html"><li>Data</li></a>
-            <a href="Date.html"><li>Date</li></a>
+           
             <a href="Discount.html"><li>Discount</li></a>
             <a href="Mass.html"><li>Mass</li></a>
             <a href="Temprature.html"><li>Temprature</li></a>
@@ -26,8 +26,36 @@
         </nav>
       </div>
     </div>
-    <div class="maincontent" id="maincontent" >
-
+    <div class="tempmaincontent" id="tempmaincontent" >
+      <div class="tempinput">
+        <label for="tempin">
+          <input type="number" id="tempin" name="tempin" placeholder="Enter Temprature" />
+        </label>
+        <label for="tempinunit">
+          <select name="tempinunit" id="tempinunit">
+            <option value="">Select input unit</option>
+            <option value="c">Celsius (°C)</option>
+            <option value="f">Fahrenheit (°F)</option>
+            <option value="k">Kelvin (K)</option>
+          </select>
+        </label>
+      </div>
+      <div class="tempoutput">
+        <label for="tempout">
+          <input type="number" id="tempout" name="tempout" placeholder="wait for result" />
+        </label>
+        <label for="tempoutunit">
+          <select name="tempoutunit" id="tempoutunit">
+            <option value="">Select output unit</option>
+            <option value="c">Celsius (°C)</option>
+            <option value="f">Fahrenheit (°F)</option>
+            <option value="k">Kelvin (K)</option>
+          </select>
+        </label>
+      </div>
+      <div class="tempconvert">
+        <button onclick="calculateTemp()">Calculate</button>
+      </div>
     </div>
     <script src="scrpt.js"></script>
   </body>

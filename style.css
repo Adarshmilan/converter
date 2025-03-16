@@ -56,7 +56,7 @@ body{
     justify-content: center;
     align-items: center;
     padding-bottom: 300px;
-    margin-top: 200px;
+    margin-top: 300px;
 }
 
 a{
@@ -82,7 +82,6 @@ a li:hover{
 
 .maincontent{
     border-radius: 15px;
-    
     width: 650px;
     height: 800px;
     background-color: #EFE9D5;
@@ -106,11 +105,11 @@ a li:hover{
 }
 
 .agecontent .inputdate{
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .agecontent .todate{
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
@@ -122,7 +121,7 @@ a li:hover{
 
     left: 100px;
     margin-top: 5px;
-    margin-bottom: 20px;
+    
     width: auto;   
 }
 
@@ -178,3 +177,451 @@ a li:hover{
 }
 
 /* age khtm ho gaya */
+
+/* area suru */
+.areamaincontent{
+    border-radius: 15px;
+    background-color: #EFE9D5;
+    box-shadow: 5px 5px 15px #7e7a6e;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.areamaincontent input[type="number"],select {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+  color: #1E201E;
+  background-color: #ECDFCC;
+}
+
+.areabtn button{
+    margin: 20px 275px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADB2D4;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* area khtm ho gaya */
+
+/* BMI suru */
+.BMImaincontent{
+    border-radius: 15px;
+    background-color: #EFE9D5;
+    box-shadow: 5px 5px 15px #7e7a6e;
+    width: 650px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.BMImaincontent input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+  color: #1E201E;
+  background-color: #ECDFCC;
+}
+.BMImaincontent button{
+    margin: 20px 275px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADB2D4;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration:  0.6s;
+}
+
+.BMImaincontent button:hover{
+    background-color: #71BBB2;
+    box-shadow: #2c3f3d 5px 5px 5px;
+}
+
+.color-line-container {
+    position: relative; /* Needed for absolute positioning of labels */
+    width: 100%; /* Adjust as needed */
+}
+  
+.color-line {
+    box-shadow: #000000 6px 3px 6px;
+    height: 10px; /* Adjust height as needed */
+    background: linear-gradient(
+      to right,
+      blue 0%,
+      blue 30%,
+      green 35%,
+      green 65%,
+      red 70%,
+      red 100%
+    );
+}
+  
+.labels {
+    display: flex; /* Arrange labels horizontally */
+    justify-content: space-evenly; /* Distribute labels evenly */
+    position: absolute; /* Position labels above the line */
+    width: 100%;
+    top: -20px; /* Adjust vertical position as needed */
+}
+  
+.label {
+    text-align: center;
+    font-size: 14px; /* Adjust font size */
+}
+
+.BMImaincontent input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin-left: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    box-sizing: border-box; /* Include padding and border in width */
+    color: #1E201E;
+    background-color: #ECDFCC;
+}
+
+.BMImaincontent label{
+    
+    font-size: 1.5rem;
+    color: #1E201E;
+}
+
+.BMIresult .sre{
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 15px;
+    box-shadow: #dfdfdf 9px 9px 5px;
+}
+
+/* BMI khtm ho gaya */
+
+/* data suru */
+.Datamaincontent{
+    border-radius: 15px;
+    background-color: #EFE9D5;
+    box-shadow: 5px 5px 15px #7e7a6e;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.Datamaincontent input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+  color: #1E201E;
+  background-color: #ECDFCC;
+}   
+
+.Datamaincontent button{
+    margin: 20px 275px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADB2D4;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration:  0.6s;
+}
+.Datamaincontent button:hover{
+    background-color: #71BBB2;
+    box-shadow: #2c3f3d 5px 5px 5px;
+}
+
+/*  data khtm ho gaya */
+
+
+/*  Discount suru */
+
+.Discountmaincontent{
+    border-radius: 15px;
+    background-color: #EFE9D5;
+    box-shadow: 5px 5px 15px #7e7a6e;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.Discountmaincontent input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+  color: #1E201E;
+  background-color: #ECDFCC;
+}
+
+.Discountmaincontent button{
+    margin: 20px 275px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADB2D4;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration:  0.6s;
+}
+.Discountmaincontent button:hover{
+    background-color: #71BBB2;
+    box-shadow: #2c3f3d 5px 5px 5px;
+}   
+
+.Discountmaincontent label{
+    font-size: 1.5rem;
+    color: #1E201E;
+}   
+
+.Discountmaincontent #result{
+    font-size: 1.5rem;
+    color: #1E201E;
+}
+
+/* Discount khtm ho gaya */
+
+/* Length suru */
+.Lengthmaincontent{
+    border-radius: 15px;
+    background-color: #EFE9D5;
+    box-shadow: 5px 5px 15px #7e7a6e;
+    width: 650px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+.Lengthmaincontent input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+  color: #1E201E;
+  background-color: #ECDFCC;
+}
+.Lengthmaincontent button{
+    margin: 20px 275px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADB2D4;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration:  0.6s;
+}
+.Lengthmaincontent button:hover{
+    background-color: #71BBB2;
+    box-shadow: #2c3f3d 5px 5px 5px;
+}
+
+/* Length khtm ho gaya */
+
+/* mass suru */
+
+.massmaincontent{
+    border-radius: 15px;
+    background-color: #EFE9D5;
+    box-shadow: 5px 5px 15px #7e7a6e;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.massmaincontent input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+  color: #1E201E;
+  background-color: #ECDFCC;
+}
+.massmaincontent button{
+    margin: 20px 275px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADB2D4;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration:  0.6s;
+}
+
+.massmaincontent button:hover{
+    background-color: #71BBB2;
+    box-shadow: #2c3f3d 5px 5px 5px;
+}
+
+.massmaincontent select{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in width */
+    color: #1E201E;
+    background-color: #ECDFCC;
+}
+
+/* mass khtm ho gaya */
+
+/* Temperature suru */
+
+.tempmaincontent{
+    border-radius: 15px;
+    background-color: #EFE9D5;
+    box-shadow: 5px 5px 15px #7e7a6e;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.tempmaincontent input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+  color: #1E201E;
+  background-color: #ECDFCC;
+}
+
+.tempmaincontent button{
+    margin: 20px 275px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADB2D4;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration:  0.6s;
+}
+
+.tempmaincontent button:hover{
+    background-color: #71BBB2;
+    box-shadow: #2c3f3d 5px 5px 5px;
+}
+
+.tempmaincontent select{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in width */
+    color: #1E201E;
+    background-color: #ECDFCC;
+}
+
+/* Temperature khtm ho gaya */
+
+.timemaincontent{
+    border-radius: 15px;
+    background-color: #EFE9D5;
+    box-shadow: 5px 5px 15px #7e7a6e;
+    width: 650px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.timemaincontent input[type="number"] {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width */
+  color: #1E201E;
+  background-color: #ECDFCC;
+}
+
+.timemaincontent button{
+    margin: 20px 275px ;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ADB2D4;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration:  0.6s;
+}
+
+.timemaincontent button:hover{
+    background-color: #71BBB2;
+    box-shadow: #2c3f3d 5px 5px 5px;
+}
+
+.timemaincontent select{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding and border in width */
+    color: #1E201E;
+    background-color: #ECDFCC;
+}
+
+/* time khtm ho gaya */

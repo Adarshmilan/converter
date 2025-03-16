@@ -16,7 +16,7 @@
             <a href="BMI.html"><li>BMI</li></a>
             <a href="Age.html"><li>Age</li></a>
             <a href="Data.html"><li>Data</li></a>
-            <a href="Date.html"><li>Date</li></a>
+            
             <a href="Discount.html"><li>Discount</li></a>
             <a href="Mass.html"><li>Mass</li></a>
             <a href="Temprature.html"><li>Temprature</li></a>
@@ -26,8 +26,35 @@
         </nav>
       </div>
     </div>
-    <div class="maincontent" id="maincontent" >
-
+    <div class="timemaincontent" id="timemaincontent" >
+      <div class="timeinput">
+        <label for="timeinput">
+          <input type="number" id="timeinput" name="timeinput" placeholder="Enter time" />
+        </label>
+        <label for="timeinputunit">
+          <select name="timeinputunit" id="timeinputunit">
+            <option value="">Select input unit</option>
+            <option value="s">Second</option>
+            <option value="m">Minute</option>
+            <option value="h">Hour</option>
+          </select>
+      </div>
+      <div class="timeoutput">
+        <label for="timeoutput">
+          <input type="number" id="timeoutput" name="timeoutput" placeholder="Result" />
+        </label>
+        <label for="timeoutputunit">
+          <select name="timeoutputunit" id="timeoutputunit">
+            <option value="">Select output unit</option>
+            <option value="s">Second</option>
+            <option value="m">Minute</option>
+            <option value="h">Hour</option>
+          </select>
+        </label>
+      </div>
+      <div class="timeconvert">
+        <button onclick="calculateTime()">Calculate</button>
+      </div>
     </div>
     <script src="scrpt.js"></script>
   </body>

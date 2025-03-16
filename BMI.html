@@ -16,7 +16,7 @@
             <a href="BMI.html"><li>BMI</li></a>
             <a href="Age.html"><li>Age</li></a>
             <a href="Data.html"><li>Data</li></a>
-            <a href="Date.html"><li>Date</li></a>
+           
             <a href="Discount.html"><li>Discount</li></a>
             <a href="Mass.html"><li>Mass</li></a>
             <a href="Temprature.html"><li>Temprature</li></a>
@@ -26,7 +26,28 @@
         </nav>
       </div>
     </div>
-    <div class="maincontent" id="maincontent" >
+    <div class="BMImaincontent" id="BMImaincontent" >
+      <label for="weightinput"> Enter your weight in kg:
+        <input type="number" id="weightinput" placeholder="Enter your weight in kg" />
+      </label>
+      <label for="heightinput"> Enter your height in cm:
+        <input type="number" id="heightinput" placeholder="Enter your height in cm" />
+      </label>
+      <button class="" onclick="calculateBMI()">Calculate</button>
+
+      <div class="color-line-container">
+        <div class="color-line"></div>
+        <div class="labels">
+          <span class="label red-label">Underweight</span>
+          <span class="label blue-label">Normal(18.5 - 25)</span>
+          <span class="label green-label">Overweight</span>
+        </div>
+      </div>
+
+      <div class="BMIresult">
+        <div class="sre" id="BMI">BMI:</div>
+        <div class="sre" id="BMIstatus">BMI status</div>
+      </div>
 
     </div>
     <script src="scrpt.js"></script>

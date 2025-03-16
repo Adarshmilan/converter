@@ -16,7 +16,7 @@
             <a href="BMI.html"><li>BMI</li></a>
             <a href="Age.html"><li>Age</li></a>
             <a href="Data.html"><li>Data</li></a>
-            <a href="Date.html"><li>Date</li></a>
+        
             <a href="Discount.html"><li>Discount</li></a>
             <a href="Mass.html"><li>Mass</li></a>
             <a href="Temprature.html"><li>Temprature</li></a>
@@ -26,7 +26,40 @@
         </nav>
       </div>
     </div>
-    <div class="maincontent" id="maincontent" >
+    <div class="massmaincontent" id="massmaincontent" >
+      <div class="massinput">
+        <label for="massin">
+          <input type="number" id="massin" name="massin" placeholder="Enter mass" />
+        </label>
+        <label for="massinunit">
+          <select name="massinunit" id="massinunit">
+            <option value="">Select a unit</option>
+            <option value="kg">Kilogram</option>
+            <option value="g">Gram</option>
+            <option value="mg">Milligram</option>
+            <option value="t">Tonne</option>
+            <option value="oz">Ounce</option>
+            <option value="lb">Pound</option>
+          </select>
+      </div>
+      <div class="massoutput">
+        <label for="massout">
+          <input type="number" id="massout" name="massout" placeholder="Result" />
+        </label>
+        <label for="massoutunit">
+          <select name="massoutunit" id="massoutunit">
+            <option value="">Select a unit</option>
+            <option value="kg">Kilogram</option>
+            <option value="g">Gram</option>
+            <option value="mg">Milligram</option>
+            <option value="t">Tonne</option>
+            <option value="oz">Ounce</option>
+            <option value="lb">Pound</option>
+          </select>
+      </div>
+      <div class="massconvert">
+        <button onclick="massconvert()">Convert</button>
+      </div>
 
     </div>
     <script src="scrpt.js"></script>
