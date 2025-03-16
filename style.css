@@ -19,6 +19,13 @@
     
 }
 
+
+.upr img{
+    width: 36px;
+    height: 22  px;
+    padding-right: 15px;
+}
+
 .c1{
     font-size: 3rem;
     text-shadow: 6px 6px 6px rgb(13, 13, 13);
@@ -38,11 +45,13 @@ ul{
 }
 
 li{
+    padding: 0%;
+    padding-top: 5px;
     text-align: center;
     justify-items: center;
     border-radius: 10px;
     height: 35px;
-    width: 150px;
+    width: 180px;
     background-color: rgb(73, 125, 116);    
     list-style: none;
     font-size: 1.5rem;
